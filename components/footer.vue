@@ -1,5 +1,5 @@
-<templathey>
+<template>
     <div>
-        hey lol haha
+        hey lol
     </div>
-</templathey lol hahae>
+</template>
