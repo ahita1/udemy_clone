@@ -1,4 +1,6 @@
 <template>
+  <div class="bg-gray-100 min-h-screen">
+    <!-- Header -->
     <header class="flex items-center justify-between px-6 py-2 bg-white shadow-md border-b">
       <!-- Left Section: Logo and Categories Dropdown -->
       <div class="flex items-center space-x-6">
@@ -136,15 +138,81 @@
         <button class="px-4 py-2 bg-gray-900 text-white font-medium rounded-full hover:bg-gray-700">Sign up</button>
       </div>
     </header>
-  </template>
-  
-  <script lang="ts">
-  export default {
-    name: 'UdemyHeader',
-  }
-  </script>
-  
-  <style scoped>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 px-4">
+      <div class="lg:flex gap-8">
+        <!-- Course Info -->
+        <div class="flex-1">
+          <nav class="text-sm text-gray-600">
+            Design &gt; User Experience Design &gt; User Experience (UX) Design
+          </nav>
+          <h1 class="text-4xl font-bold my-4">UX & Web Design Master Course: Strategy, Design, Development</h1>
+          <p class="text-lg mb-4">
+            Learn how to apply User Experience (UX) principles to your website designs, code a variety of sites, and increase sales!
+          </p>
+          <div class="flex items-center space-x-2 mb-4">
+            <span class="text-yellow-500 text-xl">★ 4.6</span>
+            <span>(15,394 ratings)</span>
+            <span>•</span>
+            <span>106,300 students</span>
+          </div>
+          <div class="text-gray-500 mb-4">Created by <a href="#" class="text-blue-600">Joe Natoli</a></div>
+          <div class="flex items-center space-x-4 text-gray-600 mb-8">
+            <span>Last updated 3/2020</span>
+            <span>English [Auto], French [Auto]</span>
+          </div>
+          <section class="bg-white rounded-lg p-6 shadow-lg mb-8">
+            <h2 class="text-xl font-semibold mb-4">What you'll learn</h2>
+            <ul class="space-y-2">
+              <li>✓ A clear understanding of the principles and benefits of good UX and how to apply it to your website</li>
+              <li>✓ The confidence to know what information should be included in your website, and how to design it to increase conversions</li>
+              <li>✓ A strategy for making sure you know what people need from your website</li>
+              <li>✓ The ability to code a variety of websites with HTML, CSS, WordPress, and other tools</li>
+            </ul>
+          </section>
+          <section class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Explore related topics</h2>
+            <div class="flex flex-wrap gap-4">
+              <span class="bg-gray-200 rounded-full py-2 px-4">User Experience (UX) Design</span>
+              <span class="bg-gray-200 rounded-full py-2 px-4">Web Design</span>
+              <span class="bg-gray-200 rounded-full py-2 px-4">User Experience Design</span>
+              <span class="bg-gray-200 rounded-full py-2 px-4">Design</span>
+            </div>
+          </section>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="lg:w-1/4 bg-white rounded-lg shadow-lg p-6 sticky top-16">
+          <img src="@/assets/image.png" alt="Instructor" class="rounded-lg mb-4" />
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xl font-bold">$64.99</span>
+            <button class="bg-purple-600 text-white py-2 px-4 rounded">Add to cart</button>
+          </div>
+          <p class="text-gray-600 mb-4">30-Day Money-Back Guarantee</p>
+          <button class="bg-gray-800 text-white py-2 px-4 w-full rounded mb-2">Share</button>
+          <button class="bg-gray-800 text-white py-2 px-4 w-full rounded mb-2">Gift this course</button>
+          <div class="mt-4">
+            <label for="coupon" class="block text-gray-600">Apply Coupon</label>
+            <input type="text" id="coupon" class="border border-gray-300 rounded w-full py-2 px-3 mt-1" placeholder="Enter Coupon"/>
+            <button class="bg-purple-600 text-white py-2 px-4 w-full mt-2 rounded">Apply</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'UdemyPageClone',
+};
+</script>
+
+<style scoped>
+.container {
+  max-width: 1200px;
+}
   /* Additional dropdown styling */
   .group:hover .group-hover\:block {
     display: block;
@@ -153,5 +221,4 @@
   .group:hover .group-hover\:flex {
     display: flex;
   }
-  </style>
-  
+</style>
